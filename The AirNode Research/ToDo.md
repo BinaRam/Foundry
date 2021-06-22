@@ -12,5 +12,5 @@ Regular request, short request and full request
 Fulfillment is taking anywhere from 2-40+ miniutes!!
 -- It seems to be okay now-- May be Akhil's set up issue.
 
-## Docker deploy of AirNode in preperation for Google Vision API interface
+## Docker deploy of AirNode in preparation for Google Vision API interface
 --Swetha is working on it.
