@@ -4,4 +4,4 @@ This project is about oraclizing APIs so that smart contracts can find consisten
 
 The project is developed in 6 phases.
 
-![The airnode concept](./.png?raw=true "The airnode concept")
+![The airnode concept](./API3Concept1.png?raw=true "The airnode concept")
