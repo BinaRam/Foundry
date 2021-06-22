@@ -1,5 +1,5 @@
-## The Graph research
+# The Graph research
 
-# Basic graph Concept
+## Basic graph Concept
 
 ![The graph concept](./GraphConcept.png?raw=true "The graph concept")
