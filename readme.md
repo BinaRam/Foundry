@@ -1,6 +1,6 @@
 # Foundry Research and Development
 
 
-- [AirNode research](The%20AirNode%20Research/readme.md)
+- [AirNode research](The%20Graph%20Research/readme.md)
 - [Graph research](The%20Graph%20Research/readme.md)
 
