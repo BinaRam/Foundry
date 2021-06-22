@@ -1,10 +1,10 @@
 # The AirNode Research
 
--- AirNode/API3 basic concept
+- AirNode/API3 basic concept
 
-[The airnode/API3 concept](./The%20AirNode%20Research/API3Concept1.png)
+![The airnode/API3 concept](./The%20AirNode%20Research/API3Concept1.png)
 
--- AirNode projetc plan
+- AirNode project plan
 
 The project is developed in 6 phases.
 
