@@ -2,7 +2,7 @@
 
 - AirNode/API3 basic concept
 
-![The airnode/API3 concept](./The%20AirNode%20Research/API3Concept1.png)
+![The airnode/API3 concept](./The%20AirNode%20Research/API3Concept1.png?raw=true "The airnodeAPI3 concept")
 
 - AirNode project plan
 
