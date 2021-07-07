@@ -13,3 +13,10 @@ The project will be developed in 6 phases.
 
 ![The airnode/API3 concept](./API3Concept1.png?raw=true "The airnodeAPI3 concept")
 
+
+
+Commands to Execute:
+
+Clone the repository to your local folder
+
+run command "npm install" to install all the dependencies
