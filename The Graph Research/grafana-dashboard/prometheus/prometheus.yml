@@ -1,0 +1,118 @@
+scrape_configs:
+  - job_name: "graphql"
+    metrics_path: "/query"
+    params:
+      endpoint:
+        ["https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3"]
+      query:
+        - |
+          {
+            pools (where : {id : "0x000ea4a83acefdd62b1b43e9ccc281f442651520" } ) {
+                volumeUSD
+                volumeToken0
+                volumeToken1
+                liquidity
+                volumeUSD
+                feesUSD
+                sqrtPrice
+                tick
+                totalValueLockedETH
+                totalValueLockedUSD
+                liquidityProviderCount
+                txCount
+                token0{
+                  id
+                  name
+                  symbol
+                  totalSupply
+                  volume
+                  volumeUSD
+                  feesUSD
+                  poolCount
+                  derivedETH  
+                } 
+                token1{
+                  id
+                  name
+                  symbol
+                  totalSupply
+                  volume
+                  volumeUSD
+                  feesUSD
+                  poolCount
+                  derivedETH  
+                }
+                poolHourData{
+                  id
+                  periodStartUnix
+                  token0Price
+                  token1Price
+                  volumeUSD
+                  volumeToken0
+                  volumeToken1
+                  feesUSD
+                }
+            }
+          }
+
+    static_configs:
+      - targets: ["localhost:9199"] # graphql_exporter address:port
+
+
+
+
+  - job_name: "balancer"
+    metrics_path: "/query"
+    params:
+      endpoint:
+        ["https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2"]
+      query:
+        - |
+          {
+            balancers(where :{ id : "2"}) {
+                id
+                poolCount
+                pools (where: {id: "0x01abc00e86c7e258823b9a055fd62ca6cf61a16300010000000000000000003b"}){
+                  id
+                  poolType
+                  strategyType
+                  symbol
+                  name
+                  swapFee
+                  totalWeight
+                  totalShares
+                  totalSwapVolume
+                  totalLiquidity
+                  unitSeconds
+                  tokens{
+                    name
+                    symbol
+                    balance
+                    invested
+                    weight
+                    investments{
+                      amount
+                      timestamp
+                    }
+                  }
+                }
+                totalLiquidity
+                totalSwapVolume
+                totalSwapFee
+            } tokenPrices {
+                id
+                asset
+                amount
+                pricingAsset
+                price
+                timestamp
+            }
+          }
+
+    static_configs:
+      - targets: ["localhost:9199"] # graphql_exporter address:port
+      
+      
+
+
+  
